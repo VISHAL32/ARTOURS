@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AR TOURS - Travel and Tours">
+	<meta name="author" content="Ansonika">
+	<title>AR TOURS - Travel and Tours</title>
+
+	<!-- Favicons-->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Satisfy" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<script>
+	// Auto-append .html if user visits /about or /contacts without extension
+	const path = window.location.pathname;
+	if (!path.endsWith(".html") && path !== "/") {
+	  const newPath = path.replace(/\/$/, "") + ".html";
+	  fetch(newPath).then(res => {
+		if (res.ok) {
+		  window.history.replaceState({}, "", path); // keep clean URL in bar
+		  window.location.href = newPath; // load real file
+		}
+	  });
+	}
+  </script>
+<body>
+
+	<div class="layer"></div>
+	<!-- Mobile menu overlay mask -->
+
+	<!-- <div id="preloader">
+		<div data-loader="circle-side">
+			<img src="./img/favicon-96x96.png" alt="AR Tours Logo" />
+			<span class="spinner"></span>
+		</div>
+	</div> -->
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loader-wrapper">
+		<img src="./img/favicon-96x96.png" alt="AR Tours Logo" class="logo" />
+		<span class="spinner"></span>
+		</div>
+	</div>
+	<!-- End Preload -->
+
+	<!-- Header================================================== -->
+	<div id="header_1">
+		<header>
+			<div id="top_line">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<a href="tel://+61400044004" id="phone_top">+61 400044004</a><span id="opening">Mon - Sat 8.00/18.00</span>
+						</div>
+					</div>
+					<!-- End row -->
+				</div>
+				<!-- End container-->
+			</div>
+			<!-- End top line-->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<div id="logo_home">
+							<h1><a href="index.html" title="AR Tours Travels">AR Tours Travel</a></h1>
+						</div>
+					</div>
+					<nav class="col-md-9 col-sm-9 col-xs-9">
+						<a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+						<div class="main-menu">
+							<div id="header_menu">
+								<img src="img/logo_menu.png" width="145" height="34" alt="AR Tours" data-retina="true">
+							</div>
+							<a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+							<ul>
+								<li>
+									<a href="about.html">About us</a>
+								</li>
+								<li class="submenu">
+									<a href="index.html#marker" class="show-submenu">Tours</a>
+								</li>
+								<!-- <li><a href="faq.html">Faq</a> -->
+								</li>
+								<!-- <li class="submenu">
+									<a href="gallery.html" class="show-submenu">Gallery</a>
+								</li> -->
+								<li>
+									<a href="contacts.html">Contact us</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End main-menu -->
+					</nav>
+				</div>
+			</div>
+			<!-- container -->
+		</header>
+		<!-- End Header -->
+	</div>
+	<!-- End Header 1-->
+
+	<!-- SubHeader =============================================== -->
+	<section class="parallax_window_in" data-parallax="scroll" data-image-src="img/sub_header_list_museum_in.jpg" data-natural-width="1400" data-natural-height="470">
+		<div id="sub_content_in">
+			<!-- <div id="animate_intro">
+				<h1>Enjoy Maldive</h1>
+				<p>"Usu habeo equidem sanctus no ex melius labitur conceptam eos"</p>
+			</div> -->
+		</div>
+	</section>
+	<!-- End section -->
+	<!-- End SubHeader ============================================ -->
+
+	<section class="wrapper">
+		<div class="divider_border"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+
+					<div class="owl-carousel add_bottom_15">
+						<div class="item"><img src="img/carousel/carousel_in_1.jpg" alt="">
+						</div>
+						<div class="item"><img src="img/carousel/carousel_in_2.jpg" alt="">
+						</div>
+						<div class="item"><img src="img/carousel/carousel_in_3.jpg" alt="">
+						</div>
+					</div>
+
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab_1" data-toggle="tab">Overview</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="tab_1">
+
+							<p> Discover the stunning landscapes of the Great Ocean Road on this boutique luxury tour designed for small groups. With a maximum of 11 participants, enjoy an intimate experience while visiting iconic spots like the 12 Apostles and Loch Ard Gorge. This reverse itinerary allows you to beat the crowds, ensuring ample time for exploration and photo opportunities. Highlights include a rainforest walk in Great Otway National Park and wildlife sightings at Kennett River. Enjoy a relaxed pace with informative guides and great music throughout the journey.
+							<br>Best Great Ocean Road go west side auto tours on TripAdvisor with 5-star reviews
+							<br>Most booked & highly rated small group day trip from Melbourne
+								
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="icon-ok-4"></i>
+										</div>
+										<div class="feature-box-info">
+											<!-- <h4>Invenire voluptatum</h4> -->
+											<p>
+												Small group tour with a maximum of 11 people for a personalized experience
+											</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="icon-ok-4"></i>
+										</div>
+										<div class="feature-box-info">
+											<!-- <h4>Nec ludus repudiare</h4> -->
+											<p>
+												Visit the breathtaking 12 Apostles and Loch Ard Gorge before the crowds
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- End col -->
+
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="icon-ok-4"></i>
+										</div>
+										<div class="feature-box-info">
+											<!-- <h4>Vix agam fabellas</h4> -->
+											<p>
+												Includes stops at scenic locations, a rainforest walk, and wildlife spotting
+											</p>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="feature-box-icon">
+											<i class="icon-ok-4"></i>
+										</div>
+										<div class="feature-box-info">
+											<!-- <h4>Sea laoreet pericula</h4> -->
+											<p>
+												Convenient pickup from various locations in Melbourne CBD around 7 am
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- End col -->
+
+							</div>
+							<!-- End row -->
+							<hr>
+						</div>
+						<!-- End tab_1 -->
+					</div>
+					<!-- End tabs -->
+				</div>
+				<!-- End Col -->
+
+				<aside class="col-md-4">
+					<div class="box_style_2">
+						<div class="form-group">
+							<a href="https://www.tripadvisor.in/Attraction_Review-g255100-d32707840-Reviews-AR_TOURS-Melbourne_Victoria.html" target="_blank"  class="btn_outline">Book Now</a>
+						</div>
+					</div>
+				</aside>
+					
+			</div>
+			<!-- End row -->
+		</div>
+		<!-- End container -->
+	</section>
+	<!-- End section -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<h3>Reach Us</h3>
+					<a href="tel://+61400044004" id="phone">+61 400044004</a>
+					<a href="mailto:artours@gmail.com" id="email_footer">artours@gmail.com</a>
+				</div>
+			</div>
+			<!-- End row -->
+			<hr>
+			<div class="row">
+				<div class="col-sm-8">
+					<span id="copy">© AR Tours 2025- All rights reserved</span>
+				</div>
+				<div class="col-sm-4" id="social_footer">
+					<ul>
+						<li><a href="#"><i class="icon-facebook"></i></a>
+						</li>
+						<li><a href="#"><i class="icon-twitter"></i></a>
+						</li>
+						<li><a href="#"><i class="icon-google"></i></a>
+						</li>
+						<li><a href="#"><i class="icon-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End row -->
+		</div>
+		<!-- End container -->
+	</footer>
+	<!-- End footer -->
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+
+	<!-- Search Menu -->
+	<div class="search-overlay-menu">
+		<span class="search-overlay-close"><i class="icon_close"></i></span>
+		<form role="search" id="searchform" method="get">
+			<input value="" name="q" type="search" placeholder="Search..." />
+			<button type="submit"><i class="icon-search-6"></i>
+			</button>
+		</form>
+	</div>
+	<!-- End Search Menu -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/common_scripts_min.js"></script>
+	<script src="assets/validate.js"></script>
+	<script src="js/jquery.tweet.min.js"></script>
+	<script src="js/functions.js"></script>
+
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#date_pick').datepicker();
+	</script>
+	<script src="js/sidebar_carousel_detail_page_func.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/infobox.js"></script>
+
+</body>
+
+</html>
