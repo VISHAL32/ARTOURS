@@ -72,7 +72,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact";
 $usersubject = "Thank You";
-$userheaders = "From: artours@gmail.com\n";
+$userheaders = "From: 777artours@gmail.com\n";
 $usermessage = "Thank you for contact AR Tours. We will reply shortly!";
 mail($user,$usersubject,$usermessage,$userheaders);
 
